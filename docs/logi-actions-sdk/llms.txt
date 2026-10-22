@@ -1,0 +1,160 @@
+# Logi Actions SDK
+
+> Documentation for Logi Actions SDK, a platform for creating custom plugins for Logitech devices.
+
+
+## actions-sdk-docs
+
+
+### ai-friendly-documentation-setup
+
+Point your AI coding assistant at this documentation so it can answer Logi Actions SDK questions from authoritative content. Every page on the site is also published as plain Markdown for direct AI consumption.
+
+- [AI-friendly Documentation Setup](/ai-friendly-documentation-setup.md): Point your AI coding assistant at this documentation so it can answer Logi Actions SDK questions from authoritative content. Every page on the site is also published as plain Markdown for direct AI consumption.
+
+### copyrights
+
+© 2026 Logitech Europe S.A. All Rights Reserved.
+
+- [Copyrights](/copyrights.md): © 2026 Logitech Europe S.A. All Rights Reserved.
+
+### csharp
+
+
+#### haptics
+
+- [Best Practices](/csharp/haptics/haptics-best-practices.md): Example Use Cases
+- [Getting Started](/csharp/haptics/haptics-getting-started.md): Plugin events enable haptic feedback interactions, triggered by user actions or application state changes. A plugin or virtual device can define one or more event sources.
+- [Overview](/csharp/haptics/haptics-overview.md): New in Plugin API 6.2.1 (Logi Options+ 1.95).
+- [Haptics Tutorial](/csharp/haptics/haptics-tutorial.md): Overview
+
+#### icons
+
+- [Action Symbols](/csharp/icons/action-symbols.md): Plugin action symbols are small icons that represent the actions. The symbols are located next to the action names in the action picker of the configuration UI:
+- [Icon Editor](/csharp/icons/icon-editor.md): Icon Editor is a part of the Options+ and Loupedeck user interfaces that lets users customize action icons. It provides navigation controls and tools, allowing you to select an icon and modify its appearance or associated text.
+- [Icon Templates](/csharp/icons/icon-templates.md): Icon Templates define button appearance by specifying its image and text layout. These templates improve customization and maintain clarity when handling button designs. Icon Template files have the .ict extension and can be used across various precedence levels.
+- [Plugin Icon](/csharp/icons/plugin-icon.md): A plugin icon is a graphical image that represents your plugin in user interfaces. The plugin icon is displayed in the Options+ and Loupedeck applications, as well as in the Logitech Marketplace.
+- [Vector Images](/csharp/icons/vector-images.md): Logi Plugin Service can use vector images instead of raster images when drawing action icons on device.
+
+#### plugin-development
+
+- [Distributing the Plugin](/csharp/plugin-development/distributing-the-plugin.md): Plugins can be distributed via the Logitech Marketplace and Loupedeck Marketplace to all other users.
+- [C# SDK Introduction](/csharp/plugin-development/introduction.md): SDK Introduction
+- [Testing and Debugging the Plugin](/csharp/plugin-development/testing-and-debugging-the-plugin.md): You can test your plugin by using it with the Logi Plugin Service.
+
+#### plugin-features
+
+- [Action Editor Actions](/csharp/plugin-features/action-editor-actions.md): Action Editor actions allow plugin developers to create custom controls with configurable user interfaces. These controls appear when users assign a plugin action to a device button or dial, enabling users to configure the action's behavior through a simple interface.
+- [Default Application Profiles](/csharp/plugin-features/default-application-profiles.md): Default application profiles should be used only with application plugins.
+- [External Service Login](/csharp/plugin-features/external-service-login.md): Plugin account handling is managed through plugin preferences, where the plugin account is one of the available preference types. This system enables integration with external services that require user authentication.
+- [Dynamic Folders](/csharp/plugin-features/implementing-dynamic-folders.md): A dynamic folder (also known as "Control center") is a dynamic workspace that is fully controlled by a plugin.
+- [Installation and Uninstallation](/csharp/plugin-features/install-and-uninstall.md): Plugin Installation
+- [Logging](/csharp/plugin-features/logging.md): Logging provides essential debugging and monitoring capabilities for both the Logi Plugin Service itself and individual plugins. The logging system helps developers troubleshoot issues, monitor plugin behavior, and track system events during development and production use.
+- [Managing Plugin Settings](/csharp/plugin-features/managing-plugin-settings.md): For each plugin, Logi Plugin Service stores a collection of setting names and values. Here are some characteristics of plugin settings:
+- [Multistate Plugin Actions](/csharp/plugin-features/multistate-plugin-actions.md): By default, plugin actions have one state.
+- [Plugin Capabilities](/csharp/plugin-features/plugin-capabilities.md): Application and Universal Plugins
+- [Plugin Localization](/csharp/plugin-features/plugin-localization.md): Plugin can be localized to any language, even if this language is not supported by Logi Options+ or Loupedeck.
+- [Plugin Status](/csharp/plugin-features/plugin-status.md): Each plugin can be in one of the following states:
+- [Profile Actions](/csharp/plugin-features/profile-actions.md): Profile action is a special type of actions with parameters, but there are some key differences.
+- [Storing Plugin Data Locally](/csharp/plugin-features/storing-plugin-data.md): Logi Plugin Service provides a possibility for plugins to store data locally.
+
+#### tutorial
+
+- [Add a Command With a Parameter](/csharp/tutorial/add-a-command-with-a-parameter.md): Commands and adjustments can contain parameters. As an example, the "apply develop profile" command in the Lightroom plugin takes the preset file name as a parameter.
+- [Add a Simple Adjustment](/csharp/tutorial/add-a-simple-adjustment.md): To create a simple adjustment, add to the plugin project a class inherited from the PluginDynamicAdjustment class. To alter the command appearance and behavior, change the properties and overwrite the virtual methods of this class.
+- [Add a Simple Command](/csharp/tutorial/add-a-simple-command.md): To create a simple command, add to your plugin project a class inherited from the PluginDynamicCommand class. To alter the command appearance and behavior, change the properties and overwrite the virtual methods of this class.
+- [Change a Button Image](/csharp/tutorial/change-a-button-image.md): By default, when the Logi Plugin Service needs to draw a button image, it uses the display name of the command that is assigned to the button.
+- [Link the Plugin to an Application](/csharp/tutorial/link-the-plugin-to-an-application.md): You can link your plugin to an application so that the plugin is activated when the application comes to the foreground.
+- [Plugin Structure](/csharp/tutorial/plugin-structure.md): Plugin consists of core implementation classes and an organized package structure that defines functionality, appearance, and localization.
+
+### getting-started
+
+Welcome to the Logi Actions SDK! This guide will help you get started with developing plugins and actions for Logitech devices. Follow the steps below to initiate your development journey and unlock the full potential of the Actions SDK.
+
+- [Getting Started](/getting-started.md): Welcome to the Logi Actions SDK! This guide will help you get started with developing plugins and actions for Logitech devices. Follow the steps below to initiate your development journey and unlock the full potential of the Actions SDK.
+
+### glossary
+
+This glossary defines key terms as used throughout the Logi Actions SDK documentation.
+
+- [Glossary](/glossary.md): This glossary defines key terms as used throughout the Logi Actions SDK documentation.
+
+### help
+
+Join our Discord community! Our team and fellow developers are ready to help.
+
+- [Need immediate assistance or have a question?](/help.md): Join our Discord community! Our team and fellow developers are ready to help.
+
+### marketplace-approval-guidelines
+
+The capitalized terms used in this document have the same meaning as those defined in the Logitech Marketplace Developer Agreement.
+
+- [Marketplace Approval Guidelines](/marketplace-approval-guidelines.md): The capitalized terms used in this document have the same meaning as those defined in the Logitech Marketplace Developer Agreement.
+
+### nodejs
+
+
+#### api-documentation
+
+The Node.js SDK provides comprehensive API documentation to help you understand and use all available classes, methods, and types in your plugin development.
+
+- [API Documentation](/nodejs/api-documentation.md): The Node.js SDK provides comprehensive API documentation to help you understand and use all available classes, methods, and types in your plugin development.
+
+#### api
+
+- [Action](/nodejs/api/classes/Action.md): Abstract base class for Plugin Actions.
+- [AdjustmentAction](/nodejs/api/classes/AdjustmentAction.md): Abstract base class for adjustment actions
+- [CommandAction](/nodejs/api/classes/CommandAction.md): Abstract base class for command actions (buttons, keys, etc.).
+- [PluginSDK](/nodejs/api/classes/PluginSDK.md): The PluginSDK provides the core functionality for building plugins that communicate
+- [LoggerLevel](/nodejs/api/enumerations/LoggerLevel.md): Logging verbosity levels for the SDK. Pass one to PluginSDKOptions
+- [AdjustmentActionExecuteEvent](/nodejs/api/type-aliases/AdjustmentActionExecuteEvent.md): Event data passed to adjustment actions when executed.
+- [PluginSDKOptions](/nodejs/api/type-aliases/PluginSDKOptions.md): Configuration options for the PluginSDK constructor.
+- [ASSETS_PATH](/nodejs/api/variables/ASSETS_PATH.md): Runtime path to the plugin's assets folder. Use this to build absolute
+
+#### creating-action
+
+Actions are how Logitech devices interact with your plugin. There are two types of actions:
+
+- [Creating an Action](/nodejs/creating-action.md): Actions are how Logitech devices interact with your plugin. There are two types of actions:
+
+#### debugging
+
+Console output from the plugin can be accessed by enabling developer mode in Logi Plugin Service.
+
+- [Debugging](/nodejs/debugging.md): Console output from the plugin can be accessed by enabling developer mode in Logi Plugin Service.
+
+#### introduction
+
+- New in Plugin API 6.2.3 (Logi Options+ 1.97, Loupedeck 6.2.4)
+
+- [Node.js SDK Introduction (Beta)](/nodejs/introduction.md): - New in Plugin API 6.2.3 (Logi Options+ 1.97, Loupedeck 6.2.4)
+
+#### using-sdk
+
+The sample plugin will already have the following code added to the index.js file. Here we will describe the functionality of the SDK class, but it is not required to run the sample plugin.
+
+- [Using the SDK](/nodejs/using-sdk.md): The sample plugin will already have the following code added to the index.js file. Here we will describe the functionality of the SDK class, but it is not required to run the sample plugin.
+
+#### working-with-assets
+
+Plugins may require external non-source files as part of their functionality. These can be text files, executables, databases, images, etc. The JS SDK provides the “assets.yml” file to allow users to specify files which are to be included as part of the plugin build process.
+
+- [Working with Assets](/nodejs/working-with-assets.md): Plugins may require external non-source files as part of their functionality. These can be text files, executables, databases, images, etc. The JS SDK provides the “assets.yml” file to allow users to specify files which are to be included as part of the plugin build process.
+
+#### working-with-external-packages
+
+A JS plugin is not a typical Node application as it must be bundled and registered with Logi Plugin Service in order for it to run. If a plugin was created using the logitoolkit create command, the build NPM script will include external JS dependencies as part of a bundling process. However, some packages may include certain assets in order to function. These may be non-JS script files, binaries, json files, etc. that are used by the package during runtime. If these files are not included as part of the build process, then there will likely be issues using these packages at runtime.
+
+- [Working with External Packages](/nodejs/working-with-external-packages.md): A JS plugin is not a typical Node application as it must be bundled and registered with Logi Plugin Service in order for it to run. If a plugin was created using the logitoolkit create command, the build NPM script will include external JS dependencies as part of a bundling process. However, some packages may include certain assets in order to function. These may be non-JS script files, binaries, json files, etc. that are used by the package during runtime. If these files are not included as part of the build process, then there will likely be issues using these packages at runtime.
+
+### plugin-basics
+
+This page introduces the core concepts for plugin development.
+
+- [Plugin Basics](/plugin-basics.md): This page introduces the core concepts for plugin development.
+
+### supported-devices
+
+This page describes two categories of devices: devices for executing plugin actions and devices for providing haptic feedback.
+
+- [Supported Devices](/supported-devices.md): This page describes two categories of devices: devices for executing plugin actions and devices for providing haptic feedback.

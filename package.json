@@ -1,0 +1,41 @@
+{
+	"name": "kira-window-tiling",
+	"version": "0.1.0",
+	"description": "macOS window positioning actions for the Logitech MX Creative Console keypad and Actions Ring",
+	"type": "module",
+	"main": "./dist/index.mjs",
+	"scripts": {
+		"build": "bun run typecheck && tsup",
+		"build:pack": "bun run build:prod && bun run pack",
+		"build:prod": "bun run typecheck && cross-env NODE_ENV=production tsup",
+		"pack": "logitoolkit pack",
+		"link": "logitoolkit link",
+		"typecheck": "tsc --noEmit",
+		"unlink": "logitoolkit unlink",
+		"watch": "bun run typecheck && tsup --watch"
+	},
+	"author": "Raju Dhami",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kira-explore/window-tiling.git"
+	},
+	"homepage": "https://github.com/kira-explore/window-tiling#readme",
+	"bugs": {
+		"url": "https://github.com/kira-explore/window-tiling/issues"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	},
+	"dependencies": {
+		"@logitech/plugin-sdk": "0.1.1"
+	},
+	"devDependencies": {
+		"@logitech/plugin-toolkit": "0.1.1",
+		"@types/node": "^22.18.8",
+		"cross-env": "^7.0.3",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.3",
+		"yaml": "^2.8.1"
+	}
+}
