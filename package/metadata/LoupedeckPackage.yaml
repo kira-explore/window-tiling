@@ -1,0 +1,18 @@
+type: plugin4
+name: kiraWindowTiling
+version: 0.1.0
+displayName: Kira Window Tiling
+description: "**Kira Window Tiling** adds quick macOS window positioning to your Logitech MX Creative Console Keypad or Actions Ring.\n\n**Actions**\n- Tile the active window left, right, top, or bottom.\n- Place it in any corner or center it.\n- Cycle it through the four corners.\n\nActions send Control+Option shortcuts through macOS. Configure a compatible window manager or shortcut handler, and allow Logi Plugin Service to control System Events when prompted."
+minimumLoupedeckVersion: 6.1
+author: Raju Dhami
+copyright: Raju Dhami
+homePageUrl: https://github.com/kira-explore/window-tiling
+supportPageUrl: https://github.com/kira-explore/window-tiling/issues
+license: MIT
+licenseUrl: https://opensource.org/licenses/MIT
+
+pluginType: remote
+pluginRuntime: nodejs
+entryPoint: index.mjs
+
+pluginCapabilities:
