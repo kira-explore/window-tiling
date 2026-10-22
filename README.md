@@ -2,6 +2,11 @@
 
 A macOS plugin for the Logitech MX Creative Console Keypad and Actions Ring, managed with Logi Options+. Assign window-positioning actions to Keypad keys or the Actions Ring and trigger them directly.
 
+[![CI](https://github.com/kira-explore/window-tiling/actions/workflows/ci.yml/badge.svg?branch=feat%2Fwindow-position-actions)](https://github.com/kira-explore/window-tiling/actions/workflows/ci.yml?query=branch%3Afeat%2Fwindow-position-actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform: macOS](https://img.shields.io/badge/platform-macOS-111111?logo=apple&logoColor=white)](https://www.apple.com/macos/)
+[![Node.js 24+](https://img.shields.io/badge/Node.js-24%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+
 ## Actions
 
 Phase 1 includes the following actions, grouped under **Window Position** in Logi Options+.
