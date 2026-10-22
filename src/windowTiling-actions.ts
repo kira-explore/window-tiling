@@ -112,11 +112,62 @@ class CycleCornersAction extends CommandAction {
 	}
 }
 
+type WindowSizeActionConfig = {
+	id: "zoom" | "fill" | "return_previous_size";
+	label: string;
+	description: string;
+	key: string;
+};
+
+const windowSizeActions: WindowSizeActionConfig[] = [
+	{
+		id: "zoom",
+		label: "Zoom",
+		description: "Trigger the configured Zoom shortcut",
+		key: "z",
+	},
+	{
+		id: "fill",
+		label: "Fill",
+		description: "Fill the available screen area",
+		key: "f",
+	},
+	{
+		id: "return_previous_size",
+		label: "Return to Previous Size",
+		description: "Restore the previous window size",
+		key: "r",
+	},
+];
+
+class WindowSizeAction extends CommandAction {
+	readonly name: string;
+	readonly displayName: string;
+	readonly description: string;
+	readonly groupName = "Window Size";
+
+	constructor(private readonly config: WindowSizeActionConfig) {
+		super();
+		this.name = `window_tiling_${config.id}`;
+		this.displayName = config.label;
+		this.description = config.description;
+	}
+
+	async onKeyDown(): Promise<void> {
+		try {
+			await runShortcut({ kind: "letter", key: this.config.key });
+		} catch (error) {
+			console.error(`[Window Tiling] ${this.displayName} failed.`, error);
+		}
+	}
+}
+
 const windowTilingActions = [
 	...(Object.keys(labels) as Layout[]).map(
 		(layout) => new WindowTilingAction(layout),
 	),
 	new CycleCornersAction(),
+	...windowSizeActions.map((config) => new WindowSizeAction(config)),
 ];
 
 export default windowTilingActions;
