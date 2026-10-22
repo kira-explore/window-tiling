@@ -1,14 +1,19 @@
 import { CommandAction } from "@logitech/plugin-sdk";
-import { type MacShortcut, sendMacShortcut } from "../utils/macos-shortcuts";
+import {
+	type MacShortcut,
+	type MacShortcutModifier,
+	sendMacShortcut,
+} from "../utils/macos-shortcuts";
 
 type WindowSizeConfig = {
 	id: string;
 	label: string;
 	description: string;
 	key: string;
+	modifiers?: readonly MacShortcutModifier[];
 };
 
-const modifiers = ["control", "option"] as const;
+const defaultModifiers = ["control", "option"] as const;
 
 const windowSizeConfig: WindowSizeConfig[] = [
 	{
@@ -22,6 +27,13 @@ const windowSizeConfig: WindowSizeConfig[] = [
 		label: "Fill",
 		description: "Fill the available screen area",
 		key: "f",
+	},
+	{
+		id: "minimize",
+		label: "Minimize",
+		description: "Minimize the active window to the Dock",
+		key: "m",
+		modifiers: ["command"],
 	},
 	{
 		id: "return_previous_size",
@@ -46,7 +58,7 @@ class WindowSizeAction extends CommandAction {
 		this.shortcut = {
 			kind: "letter",
 			key: config.key,
-			modifiers,
+			modifiers: config.modifiers ?? defaultModifiers,
 		};
 	}
 

@@ -6,6 +6,7 @@ A macOS plugin for the Logitech MX Creative Console Keypad and Actions Ring, man
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform: macOS](https://img.shields.io/badge/platform-macOS-111111?logo=apple&logoColor=white)](https://www.apple.com/macos/)
 [![Node.js 24+](https://img.shields.io/badge/Node.js-24%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Package manager: Bun](https://img.shields.io/badge/package%20manager-Bun-000000?logo=bun&logoColor=white)](https://bun.sh/)
 [![CodeQL](https://github.com/kira-explore/window-tiling/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/kira-explore/window-tiling/actions/workflows/github-code-scanning/codeql)
 [![Copilot](https://github.com/kira-explore/window-tiling/actions/workflows/agents/copilot-pull-request-reviewer/badge.svg)](https://github.com/kira-explore/window-tiling/actions/workflows/agents/copilot-pull-request-reviewer)
 
@@ -18,7 +19,7 @@ Phase 1 actions are grouped under **Window Position** and Phase 2 actions under 
 | Window Position | Tile Left, Tile Right, Tile Top, Tile Bottom                       |
 | Window Position | Tile Top Left, Tile Top Right, Tile Bottom Left, Tile Bottom Right |
 | Window Position | Tile Center, Cycle Corners                                         |
-| Window Size     | Zoom, Fill, Return to Previous Size                                |
+| Window Size     | Zoom, Fill, Minimize, Return to Previous Size                      |
 
 ### Keyboard Shortcuts
 
@@ -38,6 +39,7 @@ The plugin sends keyboard shortcuts through macOS using AppleScript and System E
 | Cycle Corners           | Control + Option + U, I, K, J — one corner per press |
 | Zoom                    | Control + Option + Z                                 |
 | Fill                    | Control + Option + F                                 |
+| Minimize                | Command + M                                          |
 | Return to Previous Size | Control + Option + R                                 |
 
 ## Requirements
@@ -101,4 +103,4 @@ bun run build:pack
 
 ## Scope
 
-This release includes **Phase 1 — Window Position** and **Phase 2 — Window Size**. Minimize is excluded until its shortcut is verified. Window Arrangements (Phase 3) and Full Screen (Phase 4) are planned for future development.
+This release includes **Phase 1 — Window Position** and **Phase 2 — Window Size**, including Minimize. Minimize sends the standard macOS Command + M shortcut to the frontmost app. Window Arrangements (Phase 3) and Full Screen (Phase 4) are planned for future development.
