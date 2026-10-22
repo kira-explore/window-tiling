@@ -1,5 +1,5 @@
 import { PluginSDK } from "@logitech/plugin-sdk";
-import windowTilingActions from "./src/windowTiling-actions";
+import windowTilingActions from "./src";
 
 const pluginSDK = new PluginSDK();
 
