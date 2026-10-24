@@ -1,6 +1,6 @@
 {
 	"name": "kira-window-tiling",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "macOS window positioning and sizing actions for the Logitech MX Creative Console keypad and Actions Ring",
 	"type": "module",
 	"main": "./dist/index.mjs",
